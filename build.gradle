@@ -1,0 +1,14 @@
+buildscript {
+    ext {
+        compose_version = '1.1.0-beta01' // 1.1.0-beta01
+    }
+}// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '7.2.1' apply false // 7.2.1
+    id 'com.android.library' version '7.2.1' apply false // 7.2.1
+    id 'org.jetbrains.kotlin.android' version '1.5.31' apply false // 1.5.31
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
