@@ -37,7 +37,6 @@ class UserModel : ViewModel() {
             lessons.postValue(result.getOrNull())
             // 主线程中更新 UI
             withContext(Dispatchers.Main) {
-
             }
         }
     }
